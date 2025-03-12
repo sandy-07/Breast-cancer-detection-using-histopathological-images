@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+        .result-container {
+            margin-top: 20px;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .prediction {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <div class="result-container">
+        <img src="{{ image_url }}" alt="Uploaded Image">
+        <div class="prediction">
+            <p>The result of the prediction is: <strong>{{ prediction }}</strong></p>
+        </div>
+        <a href="/" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
